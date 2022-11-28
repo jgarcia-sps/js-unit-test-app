@@ -8,9 +8,7 @@ describe('FileServices.searchFile', () => {
         assert.equal(result, true)
         done()
     })
-})
-
-describe('FileServices.searchFile', () => {
+    
     it('Debe regresar FALSE en caso de no encontrar el archivo.', done => {
         result   = fileServices.searchFile('D:/LenguajeJS/ArchivoNoExiste.txt')
         assert.equal(result, false)
