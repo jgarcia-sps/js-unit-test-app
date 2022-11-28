@@ -1,0 +1,25 @@
+{
+  "name": "js-unit-test-app",
+  "version": "1.0.0",
+  "description": "Mi de pruebas unitarias",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "mocha './test/**.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgarcia-sps"
+  },
+  "keywords": [
+    "node",
+    "test",
+    "app"
+  ],
+  "author": "Juan Carlos Garcia",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0"
+  }
+}
