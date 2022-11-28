@@ -1,6 +1,6 @@
-const assert=require("chai").assert
-const chai= require('chai')
-const fileServices= require('../src/files/file.service.js')
+const assert=require('chai').assert
+const chai=require('chai')
+const fileServices=require('../src/files/file.service.js')
 
 describe('FileServices.searchFile', () => {
     it('Debe regresar TRUE en caso de encontrar el archivo.', done => {
@@ -12,7 +12,7 @@ describe('FileServices.searchFile', () => {
 
 describe('FileServices.searchFile', () => {
     it('Debe regresar FALSE en caso de no encontrar el archivo.', done => {
-        result   = fileServices.searchFile('D:/LenguajeJS/ArchivoNoExite.txt')
+        result   = fileServices.searchFile('D:/LenguajeJS/ArchivoNoExiste.txt')
         assert.equal(result, false)
         done()
     })
