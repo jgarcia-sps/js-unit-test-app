@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "mocha './test/**.spec.js'"
+    "test": "nyc --reporter=lcov --reporter=html --reporter=text mocha './test/**.spec.js'"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "chai": "^4.3.7",
-    "mocha": "^10.1.0"
+    "mocha": "^10.1.0",
+    "nyc": "^15.1.0"
   }
 }
